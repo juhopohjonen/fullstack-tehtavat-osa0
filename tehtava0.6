@@ -1,0 +1,13 @@
+Selain->Palvelin: POST-pyyntö /exampleapp/new_note_spa, sisältää 'content' ja 'data' -arvot
+
+note right of Palvelin
+Palvelin lisää taulukkoon arvot 'content' sekä 'date'
+end note
+
+Palvelin-->Selain: Palvelin palauttaa statuksen 201 sekä messagen 'note created'
+
+note left of Selain: 
+Selain päivittää muuttujan 'notes' ja uudelleenpiirtää 
+(päivittää DOM:in) listan palvelimen palauttamaan dataan
+perustuen.
+end note
